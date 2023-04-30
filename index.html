@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Savings Plan</title>
-     
-	<link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Savings Plan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .info-container p {
+      margin: 5px 0;
+    }
+
+    .value {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-	<h1>Savings Plan</h1>
-	<table class="content-table">
-		<tr>
-			<td>Today is:</td>
-			<td id="dayOfWeek"></td>
-		</tr>
-		<tr>
-			<td>Number of days passed since the start of the year:</td>
-			<td id="daysPassed"></td>
-		</tr>
-		<tr>
-			<td>Sum of cash since the year Began:</td>
-			<td id="sumOfDays"></td>
-		</tr>
-		<tr>
-			<td>Today's contribution is:</td>
-			<td id="dailyContribution"></td>
-		</tr>
-		<tr>
-			<td>Savings amount must equal to:</td>
-			<td id="totalSavingsAmount"></td>
-		</tr>
-	</table>
+  <h1>Savings Plan</h1>
+  <div class="info-container">
+    <p>Today is: <span id="dayOfWeek" class="value"></span></p>
+  </div>
+  <div class="info-container">
+    <p>Number of days passed since the start of the year: <span id="daysPassed" class="value"></span></p>
+  </div>
+  <div class="info-container">
+    <p>Sum of cash since the year began: <span id="sumOfDays" class="value"></span></p>
+  </div>
+  <div class="info-container">
+    <p>Today's contribution is: <span id="dailyContribution" class="value"></span></p>
+  </div>
+  <div class="info-container">
+    <p>Savings amount must equal to: <span id="totalSavingsAmount" class="value"></span></p>
+  </div>
 
-</video>
-	<script src="script.js"></script>
-    
+  
+    <script src="script.js"></script>
+  
 </body>
 </html>
